@@ -1,0 +1,12 @@
+title 0.6 New note
+
+note over browser:
+User clicks save button. Browser executes event handler to:
+1/ add note to internal list of notes
+2/ clear the form
+3/ redraw the list of notes
+4/ send the note to the server
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: {message: "note created"}
